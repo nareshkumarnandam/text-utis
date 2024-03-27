@@ -36,3 +36,122 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: black;
+}
+
+.navbar{
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 20px;
+}
+textarea{
+  width: 60%;
+  height: 250px;
+  background: transparent;
+  padding: 20px;
+  border-radius: 20px;
+}
+.buttonsDiv{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+button{
+  height: 30px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  padding: 0 10px;
+  text-align: center;
+  transition: all .2s;
+  color: #ffffff;
+  background-color: #282c34;
+}
+button:active{
+  transform: scale(.95);
+  text-align: center;
+}
+.details{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.preview{
+  margin-top: -20px;
+  width: 100%;
+}
+.MuiSwitch-root.Mui-checked:hover {
+  background-color: var(--dark-hover) !important;
+}
+
+.Mui-checked:not(.MuiDisabled) {
+  color: var(--dark-text) !important;
+}
+
+.Mui-checked:not(.MuiDisabled)::after {
+  background-color: var(--dark-text) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked {
+  color: var(--dark-text) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked:hover {
+  color: var(--dark-text) !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked {
+  color: var(--light-text) !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked:hover {
+  color: var(--light-text) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked:before {
+  background-color: var(--dark-background) !important;
+}
+
+.MuiSwitch-colorPrimary.Mui-checked:after {
+  background-color: var(--dark-background) !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked:before {
+  background-color: var(--light-background) !important;
+}
+
+.MuiSwitch-colorSecondary.Mui-checked:after {
+  background-color: var(--light-background) !important;
+}
+
+.MuiSvgIcon-root.Mui-checked {
+  fill: var(--light-text) !important;
+}
+
+.Mui-checked:hover {
+  background-color: var(--dark-background) !important;
+}
+
+
+@media screen and (min-width : 240px) and (max-width: 900px) {
+  textarea{
+    width: 100%;
+  }
+  .buttonsDiv{
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
